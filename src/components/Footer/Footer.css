@@ -1,0 +1,67 @@
+@font-face {
+    font-family: AmazonEmber;
+    src: url(/src/assets/fonts/Amazon\ Ember.ttf);
+}
+
+footer {
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-width: 1000px;
+    position: relative;
+    font-family: AmazonEmber;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.button__back__to__top {
+    margin-bottom: 40px;
+    background-color: #37475A;
+    color: #FFF;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    line-height: 19px;
+    font-size: 13px;
+    border: none;
+    width: 100%;
+    font-family: inherit;
+}
+
+.button__back__to__top:hover {
+    background-color: #4f6279;
+}
+
+.divider {
+    border-top: 1px solid #DDD;
+    height: 17px;
+}
+
+.footer__table {
+    background-color: #232F3E;
+    color: #FFF;
+    display: flex;
+}
+
+.footer__table__col {
+    display: table-cell;
+    padding: 0 10px;
+}
+
+.footer__table__row {
+    display: table-row;
+}
+
+.footer__table__header {
+    font-weight: 900;
+    color: #FFF;
+    margin-bottom: 10px;
+}

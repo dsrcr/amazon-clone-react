@@ -1,5 +1,11 @@
 export const initialState = {
-    basket: [],
+    basket: [{
+        id: 3,
+        title: "New apple ipad pro 12 cali wifi 128gb silver 4th Generation",
+        price: 598.99,
+        rating: 4,
+        image: ""
+    }],
     user: null
 }
 

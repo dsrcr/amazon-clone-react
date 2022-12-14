@@ -16,7 +16,7 @@ const Header = () => {
       <Link to="/">
         <img
           className="header__logo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
           alt="amazon-logo"
         ></img>
       </Link>

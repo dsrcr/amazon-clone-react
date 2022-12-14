@@ -1,14 +1,27 @@
-const CheckoutProduct = (id, title, image, price, rating) => {
-    return (
-        <div className="checkoutProduct" children>
-            {/* <img src={image} alt="checkoutProductImage" />
-            <div className="checkoutProduct__info">
-                <p className="checkoutProduct__title">{title}</p>
+import { useStateValue } from '../StateProvider/StateProvider';
+import './CheckoutProduct.css';
+const CheckoutProduct = ({ id, title, image, price, rating }) => {
 
-                <p className="checkoutProduct__price">
+    //eslint-disable-next-line
+    const [{}, dispatch] = useStateValue();
+    const removeFromBasket = (id) => {
+        console.log("Remove from basket")
+        dispatch({
+            type: "REMOVE_FROM_BASKET",
+            id: id,
+        });
+    };
+
+    return (
+        <div className="checkoutProduct">
+            <img src={image} alt="productImage" className="checkoutProduct__image" />
+            <p className="checkoutProduct__title">{title}</p>
+            <div className="checkoutProduct__info">
+                <div className="checkoutProduct__price">
                     <small>$</small>
                     <strong>{price}</strong>
-                </p>
+                </div>
+
 
                 <div className="checkoutProduct__rating">
                     {Array(rating)
@@ -17,10 +30,13 @@ const CheckoutProduct = (id, title, image, price, rating) => {
                             <p>⭐</p>
                         ))}
                 </div>
+                <button onClick={removeFromBasket} className="checkoutProduct__button">Remove from basket</button>
+            </div>
 
-            </div> */}
+
         </div>
-    )
+
+    );
 }
 
 export default CheckoutProduct

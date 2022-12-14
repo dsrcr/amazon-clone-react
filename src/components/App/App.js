@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Home from "../../pages/Home/Home";
 import Footer from "../Footer/Footer";
+import Checkout from "../../pages/Checkout/Checkout";
+import Login from "../../pages/Login/Login"
 
 const App = () => {
   return (
@@ -16,6 +18,7 @@ const App = () => {
               <>
                 <Header />
                 <h1>Checkout</h1>
+                <Checkout />
               </>
             }
           ></Route>
@@ -24,6 +27,7 @@ const App = () => {
             element={
               <>
                 <h1>Login</h1>
+                <Login />
               </>
             }
           ></Route>

@@ -48,7 +48,6 @@ li {
 .footer__table {
     background-color: #232F3E;
     color: #FFF;
-    display: flex;
 }
 
 .footer__table__col {
@@ -64,4 +63,9 @@ li {
     font-weight: 900;
     color: #FFF;
     margin-bottom: 10px;
+}
+
+.footer__table__spacer {
+    display: table-cell;
+    padding: 0 10px;
 }

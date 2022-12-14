@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Home from "../../pages/Home/Home";
 import Footer from "../Footer/Footer";
-import Checkout from "../../pages/Checkout/Checkout";
-import Login from "../../pages/Login/Login"
+import Checkout from "../Checkout/Checkout";
 
 const App = () => {
   return (
@@ -17,7 +16,6 @@ const App = () => {
             element={
               <>
                 <Header />
-                <h1>Checkout</h1>
                 <Checkout />
               </>
             }
